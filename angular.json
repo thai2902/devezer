@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "devezer"
+    }
+  },
+  "defaultProject": "devezer",
+  "cli": {
+    "analytics": false
+  }
 }
