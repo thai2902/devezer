@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "devezer": {
+    "ezdev": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/devezer",
+            "outputPath": "dist/ezdev",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "devezer:build"
+            "browserTarget": "ezdev:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "devezer:build:production"
+              "browserTarget": "ezdev:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "devezer:build"
+            "browserTarget": "ezdev:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "devezer:serve"
+            "devServerTarget": "ezdev:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "devezer:serve:production"
+              "devServerTarget": "ezdev:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "devezer",
+  "defaultProject": "ezdev",
   "cli": {
     "analytics": false
   }
